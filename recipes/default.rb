@@ -16,6 +16,7 @@ when "ubuntu", "debian"
   case node[:app_adroit][:function]
   when "backend"
     node[:app][:packages] = [
+      "roi-feedback-package"
       #"java-gcj-compat-dev",
     ]
   when "frontend"
